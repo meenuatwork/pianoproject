@@ -15,15 +15,9 @@ clickedkey.classList.remove("active");
 }, 150);
 
 }
-//setTimeout(() =>{
-//clickedKey.classList.remove("active");
-//}, 150);
 pianokeys.forEach(key => {
    allkeys.push(key.dataset.key);
    key.addEventListener("click", () => playTune(key.dataset.key));
-   // let audio = new A
-   // udio("audio/keys-of-relaxation-21135.mp3")
-   // setTimeout(function () { audio.play() }, 300)
 });
 const handleVolume = (e) =>{
    audio.volume = e.target.value;
